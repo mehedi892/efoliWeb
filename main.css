@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62%;
+    font-family:'Roboto', sans-serif;
+}
+
+:root{
+    /****************color declaration*******************/
+    --background: #E5E5E5;
+    --primaryFontColor: #2D2D2D;
+    --SecondaryFontColor: #ffffff;
+    --primaryColor: #55AADD;
+    --secondayColor: #8AB836;
+    --normalBackground: #323232;
+    /****************color declaration end*******************/
+
+    /****************Font size declaration*******************/
+    --extraLarge: 6rem;
+    --large: 4.5rem;
+    --medium: 3.2rem;
+    --normarl: 2.4rem;
+    --small: 2rem;
+    --extraSmall: 1.8rem;
+/****************Font size declaration end*******************/
+
+
+ /****************Font Family declaration*******************/
+--secondaryFont:'Merriweather',sans-serif;
+/****************Font Family declaration end*******************/
+}
+
+
+/****************common CSS*******************/
+
+h1{
+    color: var(--primaryFontColor);
+    font-size: var(--extraLarge);
+    font-weight: 400;
+}
+
+p{
+    color: var(--primaryFontColor);
+    font-size: var(--small);
+}
+.btn{
+    background-color: var(--primaryColor);
+    color: var(--SecondaryFontColor);
+    font-size: var(--normarl);
+    cursor: pointer;
+    border: none;
+    border-radius: 0.8rem;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+/****************common CSS end*******************/
+
+/****************Navbar*******************/
+
+.navmainDiv{
+    width: 100%;
+    justify-content: space-between;
+    height: 94px;
+    align-items: center;
+    background-color: var(--normalBackground);
+}
+.logoDiv{
+    padding: 0 0 0 70px;
+}
+.menuDiv ul{
+    align-items: center;
+    height: 94px;
+
+}
+
+.menuDiv ul li{
+    
+    font-size: var(--normarl);
+    margin-left: 2rem;
+    list-style-type: none;
+    color:rgba(124, 120, 120, 0.8);
+}
+.menuDiv ul li:first-child{
+    color: var(--SecondaryFontColor);
+}
+.menuDiv ul li:hover{
+    color: var(--SecondaryFontColor);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    cursor: pointer;
+}
+
+.tryOurPdBtn{
+    width: 22rem;
+    height: 5rem;
+}
+
+.navDiv3{
+    padding: 0 70px 0 0;;
+}
+
+/****************Navbar end*******************/
+
+
+/****************header banner *******************/
+
+.headerbannerDiv1Span{
+    font-size: var(--extraLarge);
+    color: var(--primaryColor);
+    font-weight: 700;
+    
+}
+.headerbannerDiv2{
+    width: 40%;
+}
+.headerbannerDiv2 img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.headerbannerDiv1{
+    padding: 58px 0 0 85px;
+    width: 70%;
+}
+
+.headerbannerDiv1P{
+    width: 85%;
+    margin: 2rem 0 2rem 0;
+}
+
+.headerbannerBtnDiv2{
+    margin-left: 10rem;
+}
+.requestInfoBtn{
+    width: 22rem;
+    height: 5rem;
+    background: transparent;
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    margin-left: 2rem;
+}
+/****************header banner  end*******************/
+
+
+/****************achievement start*******************/
+
+.achievementDiv{
+    justify-content: space-around;
+    align-items: center;
+    height: 212px;
+    background-color: var(--secondayColor);
+    margin-top: 50px;
+}
+.achievementDiv h1,
+.achievementDiv p{
+    color: var(--SecondaryFontColor);
+    padding: 0 0 0 10rem;
+}
+.achievementCommon{
+    
+    height: 141px;
+    border-right: 2px solid var(--SecondaryFontColor);
+    width: 30%;
+}
+
+.achievementDiv3{
+    border: none;
+}
+
+
+/****************achievement end*******************/
+

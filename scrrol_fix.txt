@@ -1,0 +1,4 @@
+scrollbar 980px 
+
+
+.logoDiv > padding
