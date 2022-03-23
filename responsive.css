@@ -1,0 +1,52 @@
+/****************navbar start*******************/
+
+@media (max-width: 980px){
+    .mobileMenuIcon{
+        display: block;
+    }
+    .navmainDiv{
+        background-color: #ffffff;
+        position: relative;
+        justify-content: space-evenly;
+    }
+    .mobileMenuIconCross{
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+        display: none;
+        
+        
+    }
+    .mobileMenuIconDot{
+        cursor: pointer;
+        
+    }
+    .mobile .mobileMenuIconCross{
+        display: block;
+        
+       
+    }
+
+    .mobile .mobileMenuIconDot{
+        display: none;
+        
+    }
+   
+    .menuDiv ul{
+        flex-direction: column;
+        background-color: antiquewhite;
+        position: absolute;
+        width: 50%;
+        height: 50vw;
+        position: absolute;
+        left: 31%;
+        top: 94px;
+        transform: translateX(-200%);
+        transition: all 0.5s linear;
+    }
+    .mobile .menuDiv ul{
+        transform: translateX(0%);
+    }
+}
+
+/****************navbar end*******************/

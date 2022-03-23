@@ -44,6 +44,10 @@ p{
     color: var(--primaryFontColor);
     font-size: var(--small);
 }
+
+li{
+    list-style-type: none;
+}
 .btn{
     background-color: var(--primaryColor);
     color: var(--SecondaryFontColor);
@@ -74,20 +78,20 @@ p{
 .menuDiv ul{
     align-items: center;
     height: 94px;
+    gap: 4rem;
 
 }
 
-.menuDiv ul li{
+.menuDiv ul li a{
     
     font-size: var(--normarl);
-    margin-left: 2rem;
-    list-style-type: none;
+    text-decoration: none;
     color:rgba(124, 120, 120, 0.8);
 }
-.menuDiv ul li:first-child{
+.menuDiv ul li:first-child a{
     color: var(--SecondaryFontColor);
 }
-.menuDiv ul li:hover{
+.menuDiv ul li a:hover{
     color: var(--SecondaryFontColor);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
     cursor: pointer;
@@ -100,6 +104,9 @@ p{
 
 .navDiv3{
     padding: 0 70px 0 0;;
+}
+.mobileMenuIcon{
+    display: none;
 }
 
 /****************Navbar end*******************/
