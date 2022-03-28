@@ -61,6 +61,20 @@ li{
     display: flex;
     flex-direction: row;
 }
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.imgFullWidh{
+    width: 100%;
+    height: 100%;
+}
+.textCenter{
+    text-align: center;
+}
 /****************common CSS end*******************/
 
 /****************Navbar*******************/
@@ -180,4 +194,209 @@ li{
 
 
 /****************achievement end*******************/
+
+
+/****************Our Product section Start *******************/
+
+.ourPdMainDiv{
+    width: 100%;
+    
+}
+.ourPdGridDiv{
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    padding: 58px 0 0 85px;
+    grid-gap: 2rem;
+    
+}
+.ourPdDivH1{
+    align-items: center;
+    margin-top: 3rem;
+}
+.ourPdDivP{
+    margin: 3rem 0;
+    padding: 1.5rem;
+}
+.ourPdDivCmn{
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.ourPdDiv1Img{
+    width: 200px;
+    margin-top: 2rem;
+    height: 80px;
+}
+.ourPdDivBtn{
+    width: 100%;
+    background-color: var(--normalBackground);
+    font-size: var(--medium);
+    color: var(--SecondaryFontColor);
+    padding: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 3rem;
+}
+
+.ourPdDiv6{
+    grid-column: 2 / -1;
+    box-shadow: none;
+    justify-self: end;
+}
+.upcommingPd{
+    gap: 3rem;
+
+}
+.upcommingPdP{
+    margin-left: calc(15% - 60px);
+    font-size: 3rem;
+    font-weight: 700;
+}
+.upcommingPdImg {
+    align-items: center;
+    gap: 3rem;
+}
+.upcommingPdImg img{
+    width: 150px;
+}
+/****************Our Product section end*******************/
+
+
+/****************Video Resources Section  Start*******************/
+.videoResouceMainDiv{
+    width: 100%;
+    padding-top: 3rem;
+}
+.videoResouceMainDivGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 95%;
+    padding: 58px 0 0 85px;
+    align-items: center;
+}
+.videoResouceDiv1P{
+    width: 70%;
+}
+.videoResouceDiv1 {
+    gap: 3rem;
+}
+.videoResouceDiv2VideoCmn{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 8px;
+}
+
+.videoResouceDiv2 {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    gap: 2rem;
+}
+
+/****************Video Resources Section  end*******************/
+
+/****************Valuable Client  Section  Start *******************/
+.valueClientMainDiv{
+    width: 100%;
+
+}
+.valueClientDiv1{
+    width: 95%;
+    padding: 58px 0 0 85px;
+    align-items: center;
+}
+
+.valueClientDiv1Grid{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    gap: 2rem;
+    padding: 4rem 0rem;
+}
+.valueClientDiv1GridDivCmn{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.valueClientDiv1GridImg{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 80px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.valueClientDiv1GridImg img{
+    width: 240px;
+    height: 55px;
+}
+
+.valueClientDiv1GridDivP>p:nth-child(1),
+.valueClientDiv1GridDivP>p:nth-child(2)>span{
+ font-size: 2rem;
+ font-weight: 700;
+}
+.valueClientSeeMoreBtn button{
+    width: 190px;
+    height: 50px;
+}
+.valueClientSeeMoreBtn{
+    align-items: center;
+    gap: 3rem;
+}
+/****************Valuable Client  Section  end*******************/
+
+
+
+/****************Client review  Section  start*******************/
+.clientReviewMainDIv{
+    width: 100%;
+}
+.clientReviewDiv1Grid{
+    width: 95%;
+    align-items: center;
+    padding: 58px 0 0 85px;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 3rem;
+    
+}
+.clientReviewDiv1GridCmnImg{
+    border-radius: 50%;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+.clientReviewDiv1GridCmn{
+    grid-column: span 10;
+    display: flex;
+    gap: 10rem;
+    align-items: center;
+    background-image: url('resources/icons/Line_4.png');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 85%;
+    
+}
+.clientReviewDiv1GridCmn>img:nth-child(1),
+.clientReviewDiv1GridCmn>img:nth-child(5){
+    width: 100px;
+    height: 100px;
+}
+.clientReviewDiv1GridCmn>img:nth-child(2),
+.clientReviewDiv1GridCmn>img:nth-child(4){
+    width: 140px;
+    height: 140px;
+}
+
+.clientReviewDiv1GridCmn>img:nth-child(3){
+    width: 200px;
+    height: 200px;
+}
+
+/****************Client review  Section  end*******************/
+
+
 
