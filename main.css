@@ -174,11 +174,6 @@ textarea {
     
 }
 
-.headerbannerDiv1{
-    
-    
-}
-
 .headerbannerDiv1P{
    
     margin: 2rem 0 2rem 0;
@@ -194,6 +189,9 @@ textarea {
     color: var(--primaryColor);
     border: 1px solid var(--primaryColor);
     margin-left: 2rem;
+}
+.bannerMobile{
+    display: none;
 }
 /****************header banner  end*******************/
 
@@ -321,7 +319,7 @@ textarea {
 
 .videoResouceDiv2 {
     display: grid;
-    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-template-columns: repeat( auto-fit, minmax(220px, 1fr) );
     gap: 2rem;
 }
 
@@ -330,12 +328,13 @@ textarea {
 /****************Valuable Client  Section  Start *******************/
 .valueClientMainDiv{
     width: 100%;
-
+    position: relative;
 }
 .valueClientDiv1{
     width: 95%;
     padding: 58px 0 0 85px;
     align-items: center;
+    
 }
 
 .valueClientDiv1Grid{
@@ -350,6 +349,7 @@ textarea {
     gap: 3rem;
     padding: 2rem;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    align-items: center;
 }
 
 .valueClientDiv1GridImg{
@@ -379,6 +379,19 @@ textarea {
     align-items: center;
     gap: 3rem;
 }
+.leftArrow{
+    left: 8px;
+}
+.leftArrow,
+.rightArrow{
+    position: absolute;
+    top: 58%;
+    display: none ;
+}
+.rightArrow{
+  right: 8px;
+
+}
 /****************Valuable Client  Section  end*******************/
 
 
@@ -400,6 +413,7 @@ textarea {
 .clientReviewDiv1GridCmnImg{
     border-radius: 50%;
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    max-width: 100%;
 }
 .clientReviewDiv1GridCmn{
     grid-column: span 10;
@@ -459,6 +473,7 @@ textarea {
     grid-column: span 3;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
     border-radius: 5px;
+    height: fit-content;
 }
 .blogNewsDiv1GridCmn span{
     font-size: 2rem;
@@ -466,7 +481,7 @@ textarea {
     margin-left: 1rem;
 }
 .blogNewsDiv1GridCmn p{
-    margin: 1rem 0 0 1rem;
+    margin: 1rem 0 1rem 1rem;
 
 }
 .blogNewsDiv1Btn button{

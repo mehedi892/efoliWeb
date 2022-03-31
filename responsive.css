@@ -1,13 +1,32 @@
 /****************navbar start*******************/
 
 @media (max-width: 980px){
+  *{
+    font-size: 50%;
+  }
+    /****************Font size declaration*******************/
+  /* :root{
+    --extraLarge: 5rem;
+    --large: 3.5rem;
+    --medium: 2.2rem;
+    --normarl: 2rem;
+    --small: 1.8rem;
+    --extraSmall: 1.5rem;
+  } */
+/****************Font size declaration end*******************/
+
+
     .mobileMenuIcon{
         display: block;
     }
     .navmainDiv{
         background-color: #ffffff;
         position: relative;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        
+    }
+    .logoDiv{
+        padding: 0;
     }
     .mobileMenuIconCross{
         width: 30px;
@@ -51,10 +70,147 @@
 
 
     /****************header banner Start*******************/
+   
+    .bannerDesktop{
+        display: none;
+    }
+    .bannerMobile{
+        display: block;
+    }
+    .headerbannerGridDiv{
+        display: block;
+        padding: 0px 0 0 30px;
+    }
+    .bannerMobImgwithP{
+        display: grid;
+    grid-template-columns: repeat(12,1fr);
+    }
+    .headerbannerDiv1P{
+        grid-column: span 9;
+    }
+    .bannerMobImgwithP img{
+        width: 300px;
+        display: inline-block;
+        grid-column: span 3;
+       
+    }
+    /****************header banner end*******************/
+
+/****************achievement start*******************/
+
+    .achievementDiv h1, .achievementDiv p {
+        color: var(--SecondaryFontColor);
+        padding: 0 0 0 2rem;
+    }
+
+    /****************achievement end*******************/
+
+    /****************Our Product section Start *******************/
+
+    .ourPdGridDiv{
+        padding: 58px 0 0 30px;
+    }.upcommingPdImg{
+        gap: 1rem;
+    }
+    .upcommingPdImg img {
+        width: 70px;
+    }
+    .upcommingPdP {
+        margin-left: calc(23% - 60px);
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    .upcommingPd {
+        gap: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 1.5rem;
+        border-radius: 5px
+    }
+    /****************Our Product section end *******************/
+
+
+    /****************Video Resources Section  Start*******************/
+
+    .videoResouceMainDivGrid{
+        padding: 58px 0 0 30px;
+        display: block;
+    }
+    .videoResouceDiv1 {
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+    .videoResouceDiv1H1{
+        text-align: center;
+    }
+    .videoResouceDiv1P{
+        width: 100%;
+        text-align: center;
+    }
+    /****************Video Resources Section  end*******************/
+
+
+    /****************Valuable Client  Section  start*******************/
+    .valueClientSeeMoreBtn {
+        display: none;
+    }
+    .valueClientDiv1{
+        padding: 58px 0 0 20px;
+    }
+    .valueClientDiv1GridDivCmn{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .leftArrow,
+    .rightArrow{
+        display: block;
+    }
+    .valueClientDiv1Grid{
+        display: flex;
+        overflow: hidden;
+        width: 89%;
+        margin: auto;
+        padding: 4rem 0.5rem;
+    }
+    .valueClientDiv1GridImg{
+        width: 140px;
+    }
+    .valueClientDiv1GridImg img{
+        width: 100px;
+    }
+    .valueClientDiv1GridDivP>p:nth-child(1),
+    .valueClientDiv1GridDivP>p:nth-child(2)>span {
+        font-size: 1.7rem;
+    }
+    /****************Valuable Client  Section  end*******************/
+
+    /**************** Client review  Section  start*******************/
+
+    .clientReviewDiv1Grid{
+        padding: 58px 0 0 30px;
+    }
+
+    /****************Client review  Section  end*******************/
+
+
+    /****************Blog news Section  start*******************/
+
+    .blogNewsDiv1{
+        padding: 58px 0 0 30px;
+    }
+    /****************Blog news Section  end*******************/
+
 
     
+    /****************contact and Partners  Section  start*******************/
 
-    /****************header banner end*******************/
+    .contactPartnerGridDiv{
+        padding: 58px 0 0 30px;
+    }
+    
+    .partnerDiv div h1{
+        font-size: 2rem;
+    }
+
+    /****************contact and Partners  Section  end*******************/
 }
 
 
