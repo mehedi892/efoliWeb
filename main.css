@@ -128,9 +128,9 @@ textarea {
     text-decoration: none;
     color:rgba(124, 120, 120, 0.8);
 }
-.menuDiv ul li:first-child a{
+/* .menuDiv ul li:first-child a{
     color: var(--SecondaryFontColor);
-}
+} */
 .menuDiv ul li a:hover{
     color: var(--SecondaryFontColor);
     transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
@@ -496,7 +496,7 @@ textarea {
 .contactPartnerMainDIv{
     width: 100%;
     margin-top: 5rem;
-    margin-bottom: 200px;
+    
 }
 .contactPartnerGridDiv{
     width: 95%;
@@ -622,6 +622,9 @@ textarea {
 }
 .footercontactdetails p{
     font-size: var(--extraSmall);
+}
+.mobileShow{
+    display: none;
 }
 
 /****************Copyright Section  Start *******************/

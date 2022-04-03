@@ -1,3 +1,7 @@
+
+ /* for tab */
+
+
 /****************navbar start*******************/
 
 @media (max-width: 980px){
@@ -53,18 +57,31 @@
    
     .menuDiv ul{
         flex-direction: column;
-        background-color: antiquewhite;
+        background-color: rgba(245, 252, 255, 1);
+        ;
         position: absolute;
-        width: 50%;
-        height: 50vw;
+        width: 60%;
+        height: max-content;
         position: absolute;
-        left: 31%;
+        left: 20%;
         top: 94px;
-        transform: translateX(-200%);
+        transform: translateY(-200%);
         transition: all 0.5s linear;
     }
     .mobile .menuDiv ul{
-        transform: translateX(0%);
+        transform: translateY(0%);
+    }
+    .menuDiv ul li{
+        width: 100%;
+    }
+    .menuDiv ul li a{
+    border-bottom: 1px solid #666666;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
     }
     /****************navbar end*******************/
 
@@ -86,12 +103,14 @@
     grid-template-columns: repeat(12,1fr);
     }
     .headerbannerDiv1P{
-        grid-column: span 9;
+        grid-column: span 12;
+        font-size: 3rem;
     }
     .bannerMobImgwithP img{
         width: 300px;
         display: inline-block;
         grid-column: span 3;
+        float: right;
        
     }
     /****************header banner end*******************/
@@ -211,8 +230,142 @@
     }
 
     /****************contact and Partners  Section  end*******************/
+
+
+    
 }
 
 
 
+/* for mobile */
 
+@media (max-width: 768px){
+
+    *{
+        font-size: 33%;
+      }
+        ***************Font size declaration*******************/
+      :root{
+        --extraLarge: 6rem;
+        --large: 4.5rem;
+        --medium: 3.2rem;
+        --normarl: 2.4rem;
+        --small: 2rem;
+        --extraSmall: 1.8rem;
+      }
+    /****************Font size declaration end*******************/
+
+    .headerbannerGridDiv {
+        display: block;
+        padding: 0px 0 0 11px;
+    }
+    .headerbannerDiv1 img{
+        width: 200px;
+    }
+
+
+    .achievementDiv {
+        height: 130px;
+    }
+    .achievementCommon{
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ourPdGridDiv {
+        padding: 58px 0 0 11px;
+        grid-template-columns: repeat( auto-fit, minmax(190px, 1fr) );
+    }
+    .ourPdDiv1Img {
+        width: 130px;
+    }
+    .ourPdDivBtn img{
+        width: 30px;
+    }
+    .upcommingPdImg img {
+        width: 45px;
+    }
+    .upcommingPdP {
+        margin-left: calc(40% - 60px);
+    }
+
+
+    .videoResouceMainDivGrid {
+        padding: 58px 0 0 11px;
+    }
+    .videoResouceDiv2 {
+        grid-template-columns: repeat( auto-fit, minmax(185px, 1fr) );
+    }
+
+    .valueClientDiv1Grid{
+        width: 78%;
+    }
+    .valueClientDiv1GridImg {
+        width: 85px;
+    }
+    .valueClientDiv1GridImg img {
+        width: 70px;
+    }
+
+    .blogNewsDiv1{
+        padding: 58px 0 0 11px;
+    }
+    .blogNewsDiv1Grid>div:nth-child(1) {
+        grid-column: span 12;
+    }
+    .blogNewsDiv1Grid>div:nth-child(2), .blogNewsDiv1Grid>div:nth-child(3) {
+        grid-column: span 6;
+    }
+
+
+
+    .contactPartnerGridDiv{
+        padding: 58px 0 0 11px;
+    }
+    .partnerDiv {
+        grid-column: span 12;
+        gap: 3rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .partnerDiv div h1 {
+        font-size: 5rem;
+    }
+    .contactDiv {
+        grid-column: span 12;
+        background-size: 99% 99%;
+    }
+    .contactForm {
+        width: 90%;
+    }
+    .contactForm p{
+        margin-top: 3rem;
+    }
+
+
+
+    .footerGridDiv{
+        padding: 24px 0 8px 11px;
+    }
+    .footerGridDiv{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .mobileShow{
+        display: block;
+    }
+    
+    .footerDiv2,
+    .footercontactdetails,
+    .desktopShow{
+        display: none;
+    }
+    .footerDiv1SocialImg img {
+        width: 30px;
+    }
+    .footerDiv3>p:nth-child(1){
+        font-size: 4rem;
+    }
+}
